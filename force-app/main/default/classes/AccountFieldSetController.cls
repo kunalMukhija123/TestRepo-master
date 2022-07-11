@@ -8,6 +8,6 @@ public class AccountFieldSetController {
         }
         queryString += ' FROM Account LIMIT 5';         
         acclist = Database.query(queryString); 
-        System.debug('------ONLY APEX CLASSES-----');         
+        System.debug('-------ONLY APEX CLASSES-----');         
     }     
 }
