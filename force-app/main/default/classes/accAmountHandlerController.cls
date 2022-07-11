@@ -5,7 +5,7 @@ public class accAmountHandlerController {
         for(contact con : conList){
             accIds.add(con.accountId);
         }  
-        System.debug('---8888899999--');
+        System.debug('---888889999911--');
         if (accIds.size() > 0) {
 
             Map<id,Account> Accounts = new Map<id,Account>([SELECT id FROM Account WHERE id =: accIds]);
