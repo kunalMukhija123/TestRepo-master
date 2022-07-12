@@ -7,7 +7,7 @@
   
   <target name="deployall">
     
-  <sf:deploy username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" testlevel="NoTestRun" logtype="Detail" retrieveTarget="codepkg", unpackaged="codepkg/package.xml"/>
+  <sf:retrieve username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" testlevel="NoTestRun" logtype="Detail" retrieveTarget="codepkg" unpackaged="codepkg/package.xml"/>
   
   </target> 
 
