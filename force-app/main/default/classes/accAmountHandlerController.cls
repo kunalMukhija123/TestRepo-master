@@ -5,7 +5,7 @@ public class accAmountHandlerController {
         for(contact con : conList){
             accIds.add(con.accountId);
         }  
-        System.debug('---888889999911--');
+        System.debug('-------ONLY APEX CLASSES using ANT:::12345-----');         
         if (accIds.size() > 0) {
 
             Map<id,Account> Accounts = new Map<id,Account>([SELECT id FROM Account WHERE id =: accIds]);
