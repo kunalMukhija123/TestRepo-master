@@ -5,15 +5,10 @@
   
   <!--Deploy the unpackaged set of metadata retrieved with retrieveUnpackaged and run tests in this organizations namespace only -->
   
-  <target name="retrieveCode">
-    
-  <sf:retrieve username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" retrieveTarget="codepkg" unpackaged="codepkg/package.xml"/>
-  
-  </target> 
-  
-  <target name="deployCode">
+  <target name="deployall">
     
   <sf:deploy username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" testlevel="NoTestRun" logtype="Detail" deployRoot="force-app\main\default"/>
   
-</target>
+  </target> 
+
   </project>
